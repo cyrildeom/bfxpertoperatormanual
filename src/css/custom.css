@@ -7,7 +7,6 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-footer-background-color: rgba(72, 71, 71, 0.3);
   --ifm-color-primary: #0075bf;
   --ifm-color-primary-dark: rgb(5, 94, 152);
   --ifm-color-primary-darker: rgb(1, 56, 93);
@@ -16,8 +15,10 @@
   --ifm-color-primary-lighter: rgb(82, 185, 252);
   --ifm-color-primary-lightest: rgb(139, 197, 236);
   --ifm-code-font-size: 95%;
-  --ifm-font-color-base: rgba(252, 252, 252, 0.91);
+}
 
+.footer--dark {
+  --ifm-footer-background-color: #2b3137;
 }
 
 .docusaurus-highlight-code-line {
@@ -29,4 +30,56 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+html[data-theme='dark'] {
+  --ifm-color-feedback-background: #f0f8ff;
+}
+
+html[data-theme='light'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: #055e98;
+}
+
+html[data-theme='dark'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: #012c48;
+}
+
+
+html[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+html[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+          -26.5deg,
+          var(--ifm-color-emphasis-200) 0%,
+          var(--ifm-color-emphasis-100) 100%
+  );
 }
