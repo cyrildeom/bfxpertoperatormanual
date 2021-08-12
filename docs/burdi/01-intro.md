@@ -29,7 +29,7 @@ Burd-I is based on a 4 steps approach to create a recipe.
 
 ![workflow](/img/burdi/01-en-workflow.png)
 
-1. Opem/Create a recipe
+1. Open/Create a recipe
 2. Burden Calculation
 3. Composition Matrix
 4. Charging Matrix
@@ -37,11 +37,33 @@ Burd-I is based on a 4 steps approach to create a recipe.
 ### What is a recipe? 
 
 A recipe is composed of all the information below:
+* A unique name
+* a unique id
+* a revision
+* a group
+* etc.
+* Burden calculation
+  * Target & Set point
+  * Weight reference
+  * materials
+  * reducing agent
+  * target Basicity
+  * Eq. coke rate
+  * analysis
+  * etc.
+* Composition Matrix 
+  * cycle of batches
+  * extractors from stockhouse
+  * hopper volume
+  * etc.
+* Charging Matrix
+  * BLT settings
+  * mode 
+    * revolution
+    * percentage
+    * rotation
+  * etc.
 
-* A Name, a unique id, a revision,a group, etc.
-* Burden calculation (Target & Set point, Weight reference, materials, reducing agent, target Basicity, Eq. coke rate, analysis, etc.)
-* Composition Matrix (cycle of batches, extractors from stock house, hopper volume, etc.) 
-* Charging Matrix (BLT settings, mode (revolution, percentage, rotation, etc.)
 
 
 
