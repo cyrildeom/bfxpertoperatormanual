@@ -2,34 +2,14 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Operator Manual
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## General information
 
-## Getting Started
+This web site gives access to all available operator manuals of BFXpert web GUI.
+All web models deployed on you site has an operator manual available on the right navigation menu.
 
-Get started by **creating a new site**.
+## Support
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+in case of support/error/bug please contact : bfxpert@paulwurth.com
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
