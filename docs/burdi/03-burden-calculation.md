@@ -11,6 +11,8 @@ The view is splitted on 3 parts
    1. The burden calculation inputs
 3. The lower side of the page
    1. The burden calculation outputs
+
+![123](/img/burdi/02-123.png)
    
 ---
 ## Target & set point
@@ -62,12 +64,30 @@ If the weight mode is activated, the have to define which weight reference :
 
 ## The burden calculation inputs
 
+![burdenCalculationinputs.](/img/burdi/02-en-burdenCalculationInputs.png)
+
 The operator has to define the recipe composition:
 * The raw materials 
   * Burdening, reducing & lost Burden 
   * Chemical analysis (validate or manually adjust them)
   * Defining the corresponding rates of each material (Burdening, reducing & lost Burden)
   * The injection rates for each material
+
+
+###Burdening Materials
+
+The operator has to define the list of "Burdening Materials" (Ore/Pellets/Sinter/Basicity regulator (e.g. Quartzite, etc.)) & the individual rates / or percentage that the operator wants to add to the recipe
+
+
+
+![selectMaterials](/img/burdi/02-en-selectMaterials.gif)
+
+**@info: the order of selection of each material is going to be the order of display in the table.**
+Change order of raw materials
+
+![changeOrder](/img/burdi/02-en-changeOrder.gif)
+
+
 
 ---
 ## The burden calculation outputs
@@ -76,6 +96,10 @@ The bottom display the result of the Burden Calculation for the output productio
 • Hot Metal
 • Slag 
 
+![burdenCalculationOutputs.](/img/burdi/02-en-burdenCalculationOutputs.png)
+
 **You have to keep in mind that all concept of the "Burden Calculation" is calculating the mass balance for :**
 * 1 t/tHM
   * **This is not true if weight mode is activated**
+
+   
