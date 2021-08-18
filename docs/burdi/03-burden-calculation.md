@@ -25,6 +25,8 @@ The first step of the burden calculation is to define all targets & set point:
 * Mode Weight (optimal mode based on customer workflow)
   * Wet or Dry
 * Total coke rate [kg/tHM]
+  * The operator ha to define the value for the recipe
+  * The system will check if the recipe composition reach the defined target
 
 **Slag Constraints Basicity**
   * Activate or not the basicity correction
@@ -73,12 +75,11 @@ The operator has to define the recipe composition:
   * Defining the corresponding rates of each material (Burdening, reducing & lost Burden)
   * The injection rates for each material
 
+### Burdening Materials
 
-###Burdening Materials
-
-The operator has to define the list of "Burdening Materials" (Ore/Pellets/Sinter/Basicity regulator (e.g. Quartzite, etc.)) & the individual rates / or percentage that the operator wants to add to the recipe
-
-
+The operator has to define the list of **Burdening Materials** 
+* (Ore/Pellets/Sinter/Basicity regulator [e.g. Quartzite, etc.]) 
+* The individual rates / or percentage that the operator wants to add to the recipe
 
 ![selectMaterials](/img/burdi/02-en-selectMaterials.gif)
 
@@ -87,19 +88,75 @@ Change order of raw materials
 
 ![changeOrder](/img/burdi/02-en-changeOrder.gif)
 
+### Analysis
+
+The operator has the possibility to display all analyses via a toggle button, and/or manually update them (if required*).
+![analysis](/img/burdi/02-en-analysis.gif)
+
+### Basicity correction
+
+The operator has the possibility to activate:
+* Basicity correction on the left panel
+* Define on which correction the recipe is going to be calculated
+  * B2
+  * B3
+  * B4
+* Define the basicity correction ( B+ / B- / No correction) on the Burdening materials
+
+![basicityCorrection](/img/burdi/02-basicityCorrection.gif)
+    
+### Features
+The operator can easily reply a material by another one
+![replaceMaterial](/img/burdi/02-en-replaceMaterial.gif)
+
+
+## Reducing Materials
+The Reducing materials are divided in 2 species:
+* Reducing Agent
+* Reducing Agent at tuyere level (injection)
+  The operators have to define the rate for each reducing material.
+  * The metric units are: (e.g. metric units)
+    * kg/tHM (for Reducing Agent & Reducing Agent at tuyere level)
+    * g/Nm3 (only for Reducing Agent at tuyere level).
+  
+  * The imperial units are:
+    * kg/tHM (for Reducing Agent & Reducing Agent at tuyere level)
+    * g/Nm3 (only for Reducing Agent at tuyere level)
+
+
+## LOST BURDEN
+The Lost Burden are the dust & sludge generated during the process.
+The lost burden has a small impact on the overall process this is why this section the information are hidden and selected by default.
+
+The operator has the possibility to :
+* Adjust the Rate 
+* Manually update the analyses if required
+  ![lostBurden](/img/burdi/02-en-lostBurden.gif)
 
 
 ---
 ## The burden calculation outputs
 
 The bottom display the result of the Burden Calculation for the output production:
-• Hot Metal
-• Slag 
+* Hot Metal
+* Slag 
 
-![burdenCalculationOutputs.](/img/burdi/02-en-burdenCalculationOutputs.png)
+![burdenCalculationOutputs](/img/burdi/02-en-burdenCalculationOutputs.png)
 
 **You have to keep in mind that all concept of the "Burden Calculation" is calculating the mass balance for :**
 * 1 t/tHM
   * **This is not true if weight mode is activated**
 
-   
+## Burden Calculation
+
+When the operator has finalized the definition of the recipe, the next step is to launch a "Burden Calculation" mass balance by sending all data to the Burden Calculation Model.
+
+![burdenCalculationEngine](/img/burdi/02-en-burdenCalculationEngine.png)
+
+* Data are sent to the "Burden Calculation Model"
+* The model is going to do make burden check in order to generate errors or warnings. 
+* Every error has to be solved in order to redo the burden calculation; warning is just for your information.
+  
+  | ERROR    |     WARNING   |
+  |----------|:-------------:|
+  | col 1 is |  left-aligned |

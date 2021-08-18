@@ -15,12 +15,17 @@ It displays :
 * The charging & the composition Matrix (at the bottom part)
 ---
 ## Features available :
+---
 ### 1. Select a recipe to display composition & Chagring Matrix
 
 The operator can select a recipe on the recipe buffer and see the charging or composition matrix of it
-* Charging matrix & composition matrix are not editable at this step of the process.
+* Charging matrix 
+![chargingMatrix](/img/burdi/01-en-chargingMatrix.png)
 
-PICTURE TO ADD
+* Composition matrix
+![compositionMatrix](/img/burdi/01-en-compositionMatrix.png)
+(are not editable at this step of the process)
+---
 ### 2. Display details on a specific recipe
 In the entry view, the operator can activate the show detail toggle button.
 
