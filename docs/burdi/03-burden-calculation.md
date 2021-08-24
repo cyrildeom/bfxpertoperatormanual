@@ -27,7 +27,8 @@ The first step of the burden calculation is to define all targets & set point:
 * Total coke rate [kg/tHM]
   * The operator ha to define the value for the recipe
   * The system will check if the recipe composition reach the defined target
-
+    ![totalCokeRate](/img/burdi/02-en-totalCokeRate.png)
+ 
 **Slag Constraints Basicity**
   * Activate or not the basicity correction
   * Define which type the site is using 
@@ -88,6 +89,13 @@ Change order of raw materials
 
 ![changeOrder](/img/burdi/02-en-changeOrder.gif)
 
+### Reducing Materials
+The Reducing materials are divided in 2 species:
+* Reducing Agent
+* Reducing Agent at tuyere level (injection)
+  The operators have to define the mode for each reducing material.
+  * Weight or Rate and the metrics (t, kg/tHM, Nm3/tHM, g/Nm3,...)
+
 ### Analysis
 
 The operator has the possibility to display all analyses via a toggle button, and/or manually update them (if required*).
@@ -109,22 +117,7 @@ The operator has the possibility to activate:
 The operator can easily reply a material by another one
 ![replaceMaterial](/img/burdi/02-en-replaceMaterial.gif)
 
-
-## Reducing Materials
-The Reducing materials are divided in 2 species:
-* Reducing Agent
-* Reducing Agent at tuyere level (injection)
-  The operators have to define the rate for each reducing material.
-  * The metric units are: (e.g. metric units)
-    * kg/tHM (for Reducing Agent & Reducing Agent at tuyere level)
-    * g/Nm3 (only for Reducing Agent at tuyere level).
-  
-  * The imperial units are:
-    * kg/tHM (for Reducing Agent & Reducing Agent at tuyere level)
-    * g/Nm3 (only for Reducing Agent at tuyere level)
-
-
-## LOST BURDEN
+## Lost Burden
 The Lost Burden are the dust & sludge generated during the process.
 The lost burden has a small impact on the overall process this is why this section the information are hidden and selected by default.
 
@@ -153,10 +146,17 @@ When the operator has finalized the definition of the recipe, the next step is t
 
 ![burdenCalculationEngine](/img/burdi/02-en-burdenCalculationEngine.png)
 
-* Data are sent to the "Burden Calculation Model"
-* The model is going to do make burden check in order to generate errors or warnings. 
-* Every error has to be solved in order to redo the burden calculation; warning is just for your information.
-  
-  | ERROR    |     WARNING   |
+1. Data are sent to the "Burden Calculation Model"
+   1. The model is going to do make burden check in order to generate 
+      1. Output calculation
+      2. errors or warnings 
+         * Error has to be solved in order move in the composition matrix step
+         * Warning is just to operator that the system detect inconsistencies/deviations/...  .
+
+    Error & warnings are display on the right side of the screen.
+
+   ![error](/img/burdi/02-en-errorWarning.png)
+
+| ERROR    |     WARNING   |
   |----------|:-------------:|
-  | col 1 is |  left-aligned |
+  | ![error](/img/burdi/02-en-error.png)|  ![warning](/img/burdi/02-en-warning.png)||
