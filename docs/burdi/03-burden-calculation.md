@@ -160,3 +160,61 @@ When the operator has finalized the definition of the recipe, the next step is t
 | ERROR    |     WARNING   |
   |----------|:-------------:|
   | ![error](/img/burdi/02-en-error.png)|  ![warning](/img/burdi/02-en-warning.png)||
+
+In the table below, you can see the complete list of error & warning in the Burden Calculation view.
+
+| N°|**ERROR LIST** |
+|----------|:-------------:|
+| 1 | Remove all basicity corrections OR uncheck basicity constraint |
+| 2 | Burden composition differs from 100 % |
+| 3 | {X} density can't be equal or lower than 0, please check this material analysis |
+| 4 | You can't mix modes for top charged reducing agents |
+| 5 | Burden reference weight can't be equal or lower than 0 |
+| 6 | Burden reference total coke rate can't be equal or lower than 0 |
+| 7 | Total coke rate should be {X} kg/tHM |
+| 8 | Total coke weight should be {X} t |
+| 9 | Please specify additive for MgO addition |
+| 10 | Please use another additive for the MgO correction, the selected one has a MgO content of less than {0} % |
+| 11 | MgO constrainst needs to be upper 0 |
+| 12 | Remove MgO correction additive OR uncheck MgO constraint |
+| 13 | Please specify only one correction for MgO |
+| 14 | Basicity correction can't be equal or lower than 0 |
+| 15 | No basicity correction have been defined |
+| 16 | Missing paired correction for ferrous materials (B+ AND B-) |
+| 17 | Can't mix simultaneously ferrous and additives basicity correction |
+| 18 | More than one material for same basicity correction ({X}) has been selected |
+| 19 | Can't use paired B+ and B- for additives (B+ OR B-) |
+| 20 |B+ correction basicity is lower than B- correction basicity. Are B+ and B- corrections switched? |
+| 21 |With selected materials and constraints, {X} can't be lower than {1:0.000} and upper than {2:0.000} |
+| 22 |Unable to reach the basicity SP with this additive (Setpoint => {0}={1:0.000} ; without additive => {0}={2:0.000}) |
+| 23 |Calculation exited without reducing the FE error : {0:0.000} % |
+| 24 |Calculation exited without reducing the basicity error : {0:0.000} |
+| 25 |Calculation reached the maximum MgO corrective allowed rate |
+| 26 |MgO correction material rate is lower than minimum required rate |
+| 27 |B- correction material rate is upper than maximum allowed rate |
+| 27 |B+ correction material rate is lower than minimum required rate  |
+| 28 |B- correction material rate is upper than maximum allowed rate |
+| 29 |Calculation exited without reducing the basicity error : {0:0.000} |
+| 30 |Slag basicity {X} is out of range regarding the operating target: {1:0.00} +/- {2:0.00} |
+| N° |<center>**WARNING LIST**</center> |
+| 1 |The hot metal Si set point is not equal to the target |
+| 2 | No injection target is defined for family "{X}" |
+| 3 | The injection set point is not equal to the target for family "{X}" |
+| 4 | The basicity correction set point is not equal to the current value |
+| 5 | No basicity correction will be applied to this calculation |
+
+
+Assuming that the calculation has passed successfully.
+The engine is going to update :
+* displays the result of the calculation 
+* generates the summary.
+* generates all alarms/warnings 
+
+in case of success the "Send to matrix" button will be accessible:
+
+![move to composition](/img/burdi/02-en-burdenCalculationSuccess.png)
+
+The operator has the possibility to move to the next step
+* The **Composition Matrix**
+
+
